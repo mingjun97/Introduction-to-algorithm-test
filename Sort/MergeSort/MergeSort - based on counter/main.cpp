@@ -35,8 +35,8 @@ void Sort(int A[], int p, int q, int r) {
 	for (k = p; k <= r; k++) {
 		if (i < n1 && j < n2)
 		{
-		if (B[i] > C[j]) A[k] = C[j++];
-		else A[k] = B[i++];
+			if (B[i] > C[j]) A[k] = C[j++];
+			else A[k] = B[i++];
 		}
 		else if (i == n1) { while (k <= r) { A[k++] = C[j++]; } }
 		else if (j == n2) { while (k <= r) { A[k++] = B[i++]; } }
